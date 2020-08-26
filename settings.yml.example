@@ -1,0 +1,23 @@
+subreddit: "TopOfThe"
+flairs:
+    totd: "ab123cd4-ef56-78gh-9jk1-2l345m678no9"
+    totw: "" # Currently Unused
+    toty: "" # Currently Unused
+templates:
+    main: |-
+        # Top of the Day for {date}
+
+        ^([FAQ](https://www.reddit.com/r/TopOfThe/comments/dtlta2/mod_post_info_and_faq/) |
+        [Discord](https://discord.gg/nMgNDQS) |
+        [GitHub](https://github.com/OneUpPotato/TopOfThe))
+
+        ^(Times shown are in UTC and dates are formatted as Day/Month/Year.)
+
+        {sections}
+    section_template: |-
+        # {section_title}{section_note}
+
+        |**Place**|**{title_body}**|**Author**|**Subreddit**|**Score**|**Posted**|
+        |:-|:-|:-|:-|:-|:-|
+        {items}
+    item_template: "|{place}|[{title_body}]({permalink})|u/{author}|r/{subreddit}|{score} Upvotes|{time_submitted}|"
