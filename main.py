@@ -17,4 +17,3 @@ def handle_totd():
 
 # Start the threads.
 Thread(target=handle_totd).start()
-post_totd()
