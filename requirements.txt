@@ -1,6 +1,8 @@
-num2words==0.5.10
+discord.py==1.4.1
 praw==7.1.0
-pytz==2020.1
 requests==2.24.0
+num2words==0.5.10
+pytz==2020.1
+markdown_strings==3.3.0
 python-dotenv==0.14.0
 PyYAML==5.3.1

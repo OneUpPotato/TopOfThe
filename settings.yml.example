@@ -12,6 +12,8 @@ templates:
         [GitHub](https://github.com/OneUpPotato/TopOfThe))
 
         ^(Times shown are in UTC and dates are formatted as Day/Month/Year.)
+        
+        ^(On mobile you can scroll and slide the tables to reveal more info.)
 
         {sections}
     section_template: |-

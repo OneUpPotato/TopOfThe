@@ -2,6 +2,7 @@ from pytz import timezone
 from datetime import datetime
 from num2words import num2words
 from praw.models import Submission
+from markdown_strings import esc_format
 
 from settings import get_templates
 
@@ -59,6 +60,8 @@ def format_title_body(title_body):
             title_body = split[0]
             if len(split) >= 2:
                 add_ellipsis = True
+
+        title_body = esc_format(title_body)
 
         if add_ellipsis:
             title_body += "(...)"
